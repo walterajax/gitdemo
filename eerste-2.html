@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color:blue;
+            
+        }
+        
+        h1{
+            font-size: 3em;
+        }
+
+        .movietext{
+            text-align: center;
+        }
+        #voorstellen{
+            background-color: pink;
+        }
+    </style>
+</head>
+
+
+<body>
+    <ul>
+        <li>
+            Text:    <input type="text" id="text1">
+        </li>
+        <li>
+            Nummer:    <input type="number" id="nummer1">
+        </li>
+        <li>
+            Color:    <input type="color" id="color1">
+        </li>
+    </ul>
+
+    <table id="voorstellen">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Voornaammm</th>
+                <th>Achternaam</th>
+                <th>Leeftijd</th>
+                <th>Woonplaats</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td id="voornaam">Job</td>
+                <td>Jongebloet</td>
+                <td>26</td>
+                <td>Alkmaar</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Niyazi</td>
+                <td>Gonen</td>
+                <td>29</td>
+                <td>Almelo</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Walter</td>
+                <td>van Koesveld</td>
+                <td>27</td>
+                <td>Haarlem</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jorn</td>
+                <td>Bouwmeester</td>
+                <td>25</td>
+                <td>Haarlem</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Martijn</td>
+                <td>Hiemstra</td>
+                <td>25</td>
+                <td>Drachten</td>
+            </tr>
+        </tbody>
+    </table>
+
+<img src="https://m.media-amazon.com/images/I/915pQr7zq-L._RI_.jpg" style="max-width: 20%;">
+<div>
+    <h1>The Boys</h1>
+    <span>
+    <p class="movietext">
+        Superheroes are often as popular as celebrities, as influential as politicians, 
+        and sometimes even as revered as gods. But that's when they're using their powers for good. 
+        What happens when the heroes go rogue and start abusing their powers? 
+        When it's the powerless against the super powerful, 
+        the Boys head out on a heroic quest to expose the truth about the Seven and Vought, 
+        the multibillion-dollar conglomerate that manages the superheroes and covers up their dirty secrets. 
+        Based on the comic book series of the same name.
+    </p>
+    </span>
+</div>
+
+<script>
+       const text1Element = document.getElementById('text1');
+        //alert("Text: " + text1Element.value)
+        const nummer1Element = document.getElementById('nummer1');
+       // alert("Nummer: " + nummer1Element.value)
+        const color1Element = document.getElementById('color1');
+       // alert("Color: " + color1Element.value)
+     
+        function printnaam(voornaam) {   
+        alert (voornaam.innerText);
+        }
+
+        var voornaam = prompt("Voer je naam in: ")
+      
+        function printvoornaam(voornaam) {   
+        alert (voornaam);
+        }
+
+       
+        printvoornaam(voornaam);
+        
+
+printnaam(document.getElementById('voornaam'));
+        
+    
+</script>
+
+</body>
+
+</html>
+
